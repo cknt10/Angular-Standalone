@@ -10,7 +10,7 @@ export class MrobserverService {
 
   constructor() {
 
-    this.values = new Observable((observer) => {
+    this.values = new Observable((observer) => {    
       let i = 0;
       setInterval(() => {
         observer.next([`${i++}`,"erstens", "zweitens", "drittens"]);

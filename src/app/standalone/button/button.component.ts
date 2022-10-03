@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MrobserverService } from 'src/app/services/mrobserver.service';
 
 @Component({
   standalone: true,
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  constructor() { }
+  constructor(private obService: MrobserverService) { }
 
   ngOnInit(): void {
   }
 
+
+  dispatchNewValue () {
+
+  }
 }
